@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/login.css">
+</head>
+<style>
+#nav{
+    margin:0 10px;
+    padding: 10px;
+}
+a p{
+    display: inline;
+    color: black;
+}
+.lo{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container-fluid ,p{
+    margin: 0px;
+    padding: 10px;
+}
+.container-fluid .lo{
+    margin: 5px;
+    padding:5px; 
+}
+</style>
+<body>
+    <nav class="navbar sticky-top bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #7749F8;  width: 100%;  height: 40px; ">
+            <a class="navbar-brand" href="#" style="text-decoration:none"><p>Personal Belonging App</p></a>
+         <div class="lo">
+            <a href="singup.html"><p>Signup</p></a>
+        </div>
+        </div>
+      </nav>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span  id="nav"  class="navbar-brand mb-0 h1" style="font-size: 30px;">Login</span>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="input">
+            <h1 style="color: black">Login</h1>
+            <input type="email" id="email" placeholder="email">
+            <input type="password" id="password" placeholder="password">
+            <button id="btn">singup</button><a href="./../userPage/singup.html">singup</a>
+        </div>
+    </div>
+
+    <script type="module" src="/js/login.js"></script>
+</body>
+</html>

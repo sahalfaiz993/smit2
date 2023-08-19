@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<style>
+    #nav{
+    margin:0 10px;
+    padding: 10px;
+}
+a p{
+    display: inline;
+    color: black;
+}
+.lo{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container-fluid ,p{
+    margin: 0px;
+    padding: 10px;
+}
+.container-fluid .lo{
+    margin: 5px;
+    padding:5px; 
+}
+h1{
+    border: 1px solid white;
+    margin: 20px;
+    font-size: 40px;
+}
+</style>
+<nav class="navbar sticky-top bg-body-tertiary">
+    <div class="container-fluid" style="background-color: #7749F8;  width: 100%;  height: 40px; ">
+        <a class="navbar-brand" href="#" style="text-decoration:none"><p>Personal Belonging App</p></a>
+     <div class="lo">
+        <a href="singup.html"><p>Signup</p></a>
+    </div>
+    </div>
+<body>
+    <h1>Profile</h1>
+    <br>
+    <br>
+    <div class="container">
+        <input type="text" id="taskInput" placeholder="oldPassword">
+        <br>
+        <input type="text" id="password" placeholder="New password">
+        <br>
+        <input type="text" id="Rpassword" placeholder="Repeat password">
+        <button id="btn">Add</button>
+        <!-- Todo list items will be added dynamically here -->
+      </div>
+    
+      <div id="read"></div>
+    
+    
+      <!-- <script src="script.js"></script> -->
+      <script type="module" src="../firebase.mjs"></script>
+      <script type="module" src="../js/profile.js"></script>
+
+   
+    
+</body>
+</html>
